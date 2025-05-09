@@ -43,7 +43,13 @@ def gcd_pair_recursive_mod(a, b):
     return gcd_pair_recursive_mod(b, a % b)
 
 # Iterative version of the gcd function using subtraction, which is better but not the most efficient
-
+def gcd_pair_iterative_sub(a, b):
+    while a != b:
+        if a > b:
+            a -= b
+        else:
+            b -= a
+    return a
 # Iterative version of the gcd function using modulo, which is the most efficient
 def gcd_pair_iterative_mod(a, b):
     while b:
@@ -66,4 +72,3 @@ def lcm_list(list_of_integers: list):
 
 result = lcm_list([i for i in range(1, 21)])
 print(result)
-
