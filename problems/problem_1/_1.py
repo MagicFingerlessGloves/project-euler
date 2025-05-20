@@ -29,5 +29,6 @@ class MultipleSummer:
 
 
 # Usage
-summer = MultipleSummer(1000, [3, 5])
+summer = MultipleSummer(15, [3, 5])
 result = summer.calculate_sum()
+print(result)
