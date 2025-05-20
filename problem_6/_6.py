@@ -15,11 +15,31 @@
 
 #################################################SOLUTION#####################################################
 
-sum_of_squares = 0
-square_of_sum = 0
-for i in range(1, 101):
-    sum_of_squares += i ** 2
-    square_of_sum += i
-square_of_sum = square_of_sum ** 2
-difference = square_of_sum - sum_of_squares
-print(difference)
+# sum_of_squares = 0
+# square_of_sum = 0
+# for i in range(1, 101):
+#     sum_of_squares += i ** 2
+#     square_of_sum += i
+# square_of_sum = square_of_sum ** 2
+# difference = square_of_sum - sum_of_squares
+# print(difference)
+
+class SumSquareDifference:
+    def __init__(self, upper_limit):
+        self.upper_limit = upper_limit
+
+    def calculate_sum_of_squares(self):
+        sum_of_squares = 0
+        for i in range(1, self.upper_limit +1):
+            sum_of_squares += i ** 2
+            print(i ** 2)
+        return sum_of_squares
+    
+    def calculate_square_of_sum(self):
+        square_of_sum = 0
+        for i in range(1, self.upper_limit + 1):
+            square_of_sum += i
+        return square_of_sum ** 2
+    
+first_one_hundred = SumSquareDifference(100)
+print(first_one_hundred.calculate_square_of_sum() - first_one_hundred.calculate_sum_of_squares())
