@@ -1,1 +1,1 @@
-As I work through the problems I might need to study a new paradigm (first example:decorators) so I put all these files here since the do not fit nowhere else and I don't feel the need to start a new repo for something that sparse.
+As I work through the problems I might need to study a new paradigm (first example:decorators) so I put all these files here since they do not fit nowhere else and I don't feel like starting a new repo.
